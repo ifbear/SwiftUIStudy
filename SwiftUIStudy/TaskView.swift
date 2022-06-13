@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TaskView: View {
-    @EnvironmentObject var userData: UserData
     
     let task: Task
     @Binding var isEditing: Bool
@@ -17,25 +16,25 @@ struct TaskView: View {
         return HStack {
             if self.isEditing {
                 NavigationLink {
-                    TaskEditView(task: task).environmentObject(self.userData)
+//                    TaskEditView(task: task)
                 } label: {
-                    Text(self.task.text)
+                    Text(self.task.title)
                         .font(.body)
                         .fontWeight(.bold)
                         .foregroundColor(Color.pink)
                 }
             } else {
                 Button {
-                    guard let index = userData.tasks.firstIndex(of: task) else { return }
-                    userData.tasks[index].isFinish.toggle()
+//                    guard let index = userData.Task.firstIndex(of: task) else { return }
+//                    userData.Task[index].isFinish.toggle()
                 } label: {
-                    Text(self.task.text)
+                    Text(self.task.title)
                         .font(.body)
                         .fontWeight(.bold)
                         .foregroundColor(Color.pink)
                 }
                 Spacer()
-                if task.isFinish {
+                if task.isDone {
                     Image(systemName: "checkmark").foregroundColor(.green)
                 }
             }

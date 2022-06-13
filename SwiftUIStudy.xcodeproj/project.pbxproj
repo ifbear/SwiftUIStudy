@@ -15,6 +15,17 @@
 		A023CABB285044FA00D7D150 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CABA285044FA00D7D150 /* TaskView.swift */; };
 		A023CABD285065A100D7D150 /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CABC285065A100D7D150 /* TaskEditView.swift */; };
 		A023CABF28507A1900D7D150 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CABE28507A1900D7D150 /* ImagePicker.swift */; };
+		A023CAC528508EBB00D7D150 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A023CAC328508EBB00D7D150 /* ToDo.xcdatamodeld */; };
+		A023CAE02850927200D7D150 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CADF2850927200D7D150 /* DataManager.swift */; };
+		A023CAE52850BA3400D7D150 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAE12850BA3400D7D150 /* Task+CoreDataClass.swift */; };
+		A023CAE62850BA3400D7D150 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAE22850BA3400D7D150 /* Task+CoreDataProperties.swift */; };
+		A023CAE72850BA3400D7D150 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAE32850BA3400D7D150 /* Photo+CoreDataClass.swift */; };
+		A023CAE82850BA3400D7D150 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAE42850BA3400D7D150 /* Photo+CoreDataProperties.swift */; };
+		A023CAEA2850BEBC00D7D150 /* Task+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAE92850BEBC00D7D150 /* Task+Extension.swift */; };
+		A023CAEC2851B7F900D7D150 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAEB2851B7F900D7D150 /* Preview.swift */; };
+		A023CAEE2851C7A200D7D150 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAED2851C7A200D7D150 /* ImageView.swift */; };
+		A023CAF02851CCA700D7D150 /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAEF2851CCA700D7D150 /* ImagePreview.swift */; };
+		A023CAF22851E4ED00D7D150 /* Photo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023CAF12851E4ED00D7D150 /* Photo+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +38,17 @@
 		A023CABA285044FA00D7D150 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		A023CABC285065A100D7D150 /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
 		A023CABE28507A1900D7D150 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A023CAC428508EBB00D7D150 /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
+		A023CADF2850927200D7D150 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A023CAE12850BA3400D7D150 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A023CAE22850BA3400D7D150 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A023CAE32850BA3400D7D150 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A023CAE42850BA3400D7D150 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A023CAE92850BEBC00D7D150 /* Task+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extension.swift"; sourceTree = "<group>"; };
+		A023CAEB2851B7F900D7D150 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		A023CAED2851C7A200D7D150 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		A023CAEF2851CCA700D7D150 /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
+		A023CAF12851E4ED00D7D150 /* Photo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Photo+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +81,16 @@
 		A023CAA92850348800D7D150 /* SwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A023CACE285090C900D7D150 /* Core Data */,
 				A023CAAA2850348800D7D150 /* SwiftUIStudyApp.swift */,
 				A023CAAC2850348800D7D150 /* ContentView.swift */,
 				A023CABA285044FA00D7D150 /* TaskView.swift */,
 				A023CABC285065A100D7D150 /* TaskEditView.swift */,
 				A023CAB8285038EA00D7D150 /* UserData.swift */,
 				A023CABE28507A1900D7D150 /* ImagePicker.swift */,
+				A023CAEB2851B7F900D7D150 /* Preview.swift */,
+				A023CAED2851C7A200D7D150 /* ImageView.swift */,
+				A023CAEF2851CCA700D7D150 /* ImagePreview.swift */,
 				A023CAAE2850348900D7D150 /* Assets.xcassets */,
 				A023CAB02850348900D7D150 /* Preview Content */,
 			);
@@ -77,6 +103,21 @@
 				A023CAB12850348900D7D150 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A023CACE285090C900D7D150 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A023CAC328508EBB00D7D150 /* ToDo.xcdatamodeld */,
+				A023CAE12850BA3400D7D150 /* Task+CoreDataClass.swift */,
+				A023CAE22850BA3400D7D150 /* Task+CoreDataProperties.swift */,
+				A023CAE92850BEBC00D7D150 /* Task+Extension.swift */,
+				A023CAE32850BA3400D7D150 /* Photo+CoreDataClass.swift */,
+				A023CAE42850BA3400D7D150 /* Photo+CoreDataProperties.swift */,
+				A023CAF12851E4ED00D7D150 /* Photo+Extension.swift */,
+				A023CADF2850927200D7D150 /* DataManager.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,11 +190,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A023CAEE2851C7A200D7D150 /* ImageView.swift in Sources */,
+				A023CAEA2850BEBC00D7D150 /* Task+Extension.swift in Sources */,
+				A023CAF02851CCA700D7D150 /* ImagePreview.swift in Sources */,
 				A023CAB9285038EA00D7D150 /* UserData.swift in Sources */,
+				A023CAE72850BA3400D7D150 /* Photo+CoreDataClass.swift in Sources */,
+				A023CAE52850BA3400D7D150 /* Task+CoreDataClass.swift in Sources */,
+				A023CAEC2851B7F900D7D150 /* Preview.swift in Sources */,
+				A023CAE02850927200D7D150 /* DataManager.swift in Sources */,
+				A023CAF22851E4ED00D7D150 /* Photo+Extension.swift in Sources */,
 				A023CABF28507A1900D7D150 /* ImagePicker.swift in Sources */,
 				A023CAAD2850348800D7D150 /* ContentView.swift in Sources */,
+				A023CAE82850BA3400D7D150 /* Photo+CoreDataProperties.swift in Sources */,
 				A023CAAB2850348800D7D150 /* SwiftUIStudyApp.swift in Sources */,
+				A023CAC528508EBB00D7D150 /* ToDo.xcdatamodeld in Sources */,
 				A023CABB285044FA00D7D150 /* TaskView.swift in Sources */,
+				A023CAE62850BA3400D7D150 /* Task+CoreDataProperties.swift in Sources */,
 				A023CABD285065A100D7D150 /* TaskEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +409,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A023CAC328508EBB00D7D150 /* ToDo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A023CAC428508EBB00D7D150 /* ToDo.xcdatamodel */,
+			);
+			currentVersion = A023CAC428508EBB00D7D150 /* ToDo.xcdatamodel */;
+			path = ToDo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A023CA9F2850348800D7D150 /* Project object */;
 }

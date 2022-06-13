@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUIStudyApp: App {
+    let manager = DataManager.shared
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(UserData())
+            ContentView()
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
     }
+    
+    
 }

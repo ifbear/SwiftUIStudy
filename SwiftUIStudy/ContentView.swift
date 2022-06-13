@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import CoreData
+
 
 struct ContentView: View {
-    @EnvironmentObject var userData: UserData
     
     @State var isEditing: Bool = false
     @State var bindingText: String = ""
@@ -16,35 +17,19 @@ struct ContentView: View {
     @State private var showImagePicker: Bool = false
     @State private var inputImage: UIImage?
     
+    @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(sortDescriptors: [], predicate: nil, animation: .default)
+    private var tasks: FetchedResults<Task> {
+        didSet {
+            print("=====", tasks.count)
+        }
+    }
+    
     
     var body: some View {
         NavigationView {
             List {
-                if #available(iOS 15.0, *), !isEditing {
-                    HStack {
-                        TextField("add new task", text: $bindingText).onSubmit {
-                            userData.tasks.insert(.init(text: bindingText, isFinish: false), at: 0)
-                            bindingText = ""
-                        }
-                        Button {
-                            showImagePicker.toggle()
-                        } label: {
-                            Image(systemName: "folder.badge.plus")
-                        }
-                        .onChange(of: inputImage) { newValue in
-                            print(newValue)
-                        }
-                        .sheet(isPresented: $showImagePicker) {
-                            ImagePicker(image: $inputImage)
-                        }
-                    }
-                    
-                } else if !isEditing {
-                    TextField("add new task", text: $bindingText) { changed in
-                        print(changed)
-                    }
-                }
-                ForEach(self.userData.tasks) { task in
+                ForEach(tasks) { task in
                     HStack {
                         TaskView(task: task, isEditing: $isEditing)
                     }
@@ -53,11 +38,13 @@ struct ContentView: View {
             .navigationTitle("ToDo")
             .toolbar {
                 HStack {
-                    Button {
-                        
+                    NavigationLink {
+                        let task = Task.insert(title: "", content: nil, photos: nil)
+                        TaskEditView(task: task)
                     } label: {
-                        Text("Add")
+                        Image(systemName: "plus")
                     }
+                    
                     Button {
                         self.isEditing.toggle()
                     } label: {
