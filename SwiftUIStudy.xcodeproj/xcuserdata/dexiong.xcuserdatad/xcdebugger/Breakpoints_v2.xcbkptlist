@@ -55,65 +55,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A01EF002-A87F-4B49-81FB-3F57B93E3FBE"
+            uuid = "9702083D-2FE6-418E-A392-D1BC0FE19152"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftUIStudy/ContentView.swift"
+            filePath = "SwiftUIStudy/GestureView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "A01EF002-A87F-4B49-81FB-3F57B93E3FBE - fbf10e30d081e378"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (SwiftUIStudy.Task) -&gt; SwiftUI.HStack&lt;SwiftUIStudy.TaskView&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;SwiftUIStudy.Task&gt;, Foundation.UUID, SwiftUI.HStack&lt;SwiftUIStudy.TaskView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in SwiftUIStudy.ContentView.body.getter : some"
-                  moduleName = "SwiftUIStudy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dexiong/SwiftUIStudy/SwiftUIStudy/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "A01EF002-A87F-4B49-81FB-3F57B93E3FBE - 952c1dbeebcc75bf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUIStudy.TaskView in closure #1 (SwiftUIStudy.Task) -&gt; SwiftUI.HStack&lt;SwiftUIStudy.TaskView&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;SwiftUI.FetchedResults&lt;SwiftUIStudy.Task&gt;, Foundation.UUID, SwiftUI.HStack&lt;SwiftUIStudy.TaskView&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in SwiftUIStudy.ContentView.body.getter : some"
-                  moduleName = "SwiftUIStudy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dexiong/SwiftUIStudy/SwiftUIStudy/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "448">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ED471D3A-595D-46D3-8FC9-0A0AF5D1BF2A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIStudy/ContentView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "body(content:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
